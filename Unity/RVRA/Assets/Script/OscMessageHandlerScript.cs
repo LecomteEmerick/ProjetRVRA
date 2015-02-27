@@ -32,6 +32,10 @@ public class OscMessageHandlerScript : MonoBehaviour
 		{
 			_listeners[msgAddress].ReceiveOscMessage(oscMessage);
 		}
+		else
+		{
+			Debug.LogWarning("Received unexpected message: " + Osc.OscMessageToString(oscMessage));
+		}
 	}
 	
 	void Start()
