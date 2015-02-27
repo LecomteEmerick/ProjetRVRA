@@ -148,7 +148,7 @@ public class UnitmanagerScript : MonoBehaviour {
 
     private void resetNavMesh(UnitClass myUnitInfos)
     {
-        myUnitInfos.NavMesh.Stop(true);
+        //myUnitInfos.NavMesh.Stop(true);
         myUnitInfos.NavMesh.ResetPath();
         myUnitInfos.Unit.rigidbody.velocity = Vector3.zero;
     }
