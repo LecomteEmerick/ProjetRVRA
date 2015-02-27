@@ -21,13 +21,16 @@ public class ballManagerScript : MonoBehaviour {
     public void LaunchBall()
     {
         this._ball.transform.position = this._origin;
-        StartCoroutine(wait(10));
-        AddRandomForce();
+        this._ball.rigidbody.velocity = Vector3.zero;
+        this._ball.rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+        StartCoroutine(wait(3));
     }
 
     private IEnumerator wait(int seconde)
     {
         yield return new WaitForSeconds(seconde);
+        this._ball.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+        AddRandomForce();
         
     }
 
@@ -40,14 +43,16 @@ public class ballManagerScript : MonoBehaviour {
         int xForces = 1;
         if (Random.value < 0.5)
             xForces = -xForces;
-        this._ball.rigidbody.velocity = new Vector3(xForces, 1, zForces).normalized * speed;
+        this._ball.rigidbody.velocity = new Vector3(xForces, 0, zForces).normalized * speed;
     }
 
     public void InverseXForces(int sideInverseValue)
     {
         Vector3 currentForces = this._ball.rigidbody.velocity;
         int x = sideInverseValue;
-        float y = -0.25f;
+        float y = -0.33f;
+        if (currentForces.y == 0)
+            y = 1;
         int z = currentForces.z >= 0 ? 1 : -1;
         this._ball.rigidbody.velocity = new Vector3(x , y, z).normalized * speed;
     }
@@ -65,7 +70,9 @@ public class ballManagerScript : MonoBehaviour {
     {
         Vector3 currentForces = this._ball.rigidbody.velocity;
         int x = currentForces.x >= 0 ? 1 : -1;
-        float y = -0.25f;
+        float y = -0.33f;
+        if (currentForces.y == 0)
+            y = 1;
         int z = sideInverseValue;
         this._ball.rigidbody.velocity = new Vector3(x, y, z).normalized * speed;
     }

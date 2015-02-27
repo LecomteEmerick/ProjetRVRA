@@ -9,22 +9,33 @@ public class scoreScript : MonoBehaviour {
     [SerializeField]
     private UnityEvent winGameEvent;
 
-    private int _myScore;
+    [SerializeField]
+    private int numberPointForWin = 10;
 
-	// Use this for initialization
-	void Start () {
-	}
+    private int _myScore;
+    private int _currentPoint;
 
     public void initializeScore()
     {
         _myScore = 0;
+        resetCurrentPoint();
+    }
+
+    public void resetCurrentPoint()
+    {
+        _currentPoint = 1;
+    }
+
+    public void increaseCurrentPoint()
+    {
+        _currentPoint++;
     }
 
     public void increaseScore()
     {
-        _myScore += 1;
+        _myScore += _currentPoint;
         Debug.Log(name + " a : " + _myScore + " points");
-        if (_myScore > 9)
+        if (_myScore >= numberPointForWin)
             winGameEvent.Invoke();
     }
 }
