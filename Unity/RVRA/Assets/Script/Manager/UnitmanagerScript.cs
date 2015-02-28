@@ -56,8 +56,6 @@ public class UnitmanagerScript : MonoBehaviour {
 
         if (selectedUnit == null) { return; }
 
-        NavMeshPath path = new NavMeshPath();
-
         if(Random.value < 0.5f)
         {
             selectedUnit.changeUnitPosition(point1.transform.position);

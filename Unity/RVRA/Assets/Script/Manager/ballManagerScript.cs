@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class ballManagerScript : MonoBehaviour {
 
@@ -36,7 +35,6 @@ public class ballManagerScript : MonoBehaviour {
 
     private void AddRandomForce()
     {
-        Random ran = new Random();
         int zForces = 1;
         if(Random.value < 0.5)
             zForces = -zForces;
