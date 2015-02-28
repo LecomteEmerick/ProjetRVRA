@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public abstract class OscListenerScript : MonoBehaviour
+public abstract class OscListenerScript
 {
 	[SerializeField]
 	private string _oscAddress;	// Osc Address we want to listen to

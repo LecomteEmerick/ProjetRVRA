@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Events;
 
 public class EventManager : MonoBehaviour {
@@ -31,16 +30,16 @@ public class EventManager : MonoBehaviour {
     public void firePlayerTwoWinEvent()
     {
         Debug.Log("Player two win");
-        if (playerOneWinEvent != null)
-            playerOneWinEvent.Invoke();
+		if (playerTwoWinEvent != null)
+			playerTwoWinEvent.Invoke();
         fireEndGameEvent();
     }
 
     public void firePlayerOneGoalEvent()
     {
         //Debug.Log("Player One Goal");
-        if (playerTwoWinEvent != null)
-            playerTwoWinEvent.Invoke();
+		if (playerOneGoalEvent != null)
+			playerOneGoalEvent.Invoke();
         fireGoalEvent();
     }
 
