@@ -30,7 +30,7 @@ public class OscMessageHandlerScript : MonoBehaviour
 
 		if (_listeners.ContainsKey(msgAddress))
 		{
-			_listeners[msgAddress].ReceiveOscMessage(oscMessage);
+			_listeners[msgAddress].ReceiveOscMessage(oscMessage.Values);
 		}
 		else
 		{

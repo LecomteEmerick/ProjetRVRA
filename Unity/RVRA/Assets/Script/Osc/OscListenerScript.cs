@@ -6,7 +6,7 @@ public abstract class OscListenerScript : MonoBehaviour
 	[SerializeField]
 	private string _oscAddress;	// Osc Address we want to listen to
 
-	public abstract void ReceiveOscMessage(OscMessage message);
+	public abstract void ReceiveOscMessage(ArrayList values);
 
 	private void RegisterOscListener()
 	{
