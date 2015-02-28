@@ -327,6 +327,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 694860966}
+        m_MethodName: playRandomDeathUnitAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!54 &126971676
@@ -354,7 +366,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_LocalPosition.x
@@ -447,6 +459,26 @@ Prefab:
     - target: {fileID: 11400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: isAvailible
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 694860966}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playRandomDeathUnitAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
@@ -948,9 +980,9 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 0004b2b5d6ac89740b9f3cb764adde99, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .300000012
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -1162,6 +1194,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 694860966}
+        m_MethodName: playRandomDeathUnitAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!54 &301909772
@@ -1306,8 +1350,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516802923}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: 26.9559994, y: 6.23850012, z: -.924989998}
+  m_LocalRotation: {x: .382683486, y: 0, z: 0, w: .923879564}
+  m_LocalPosition: {x: 0, y: 35, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1321,7 +1365,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1414,6 +1458,26 @@ Prefab:
     - target: {fileID: 11400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: isAvailible
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 694860966}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playRandomDeathUnitAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
@@ -1591,6 +1655,18 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 620156282}
         m_MethodName: disableNavMesh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 694860966}
+        m_MethodName: playRandomDeathUnitAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1921,8 +1997,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 780830015}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 9, z: -4.5}
-  m_LocalScale: {x: .5, y: 20, z: 10}
+  m_LocalPosition: {x: 0, y: 7, z: -4.5}
+  m_LocalScale: {x: .5, y: 15, z: 10}
   m_Children: []
   m_Father: {fileID: 228861685}
   m_RootOrder: 5
@@ -2138,6 +2214,18 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 820961079}
         m_MethodName: disableNavMesh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 694860966}
+        m_MethodName: playRandomDeathUnitAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2536,6 +2624,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!1 &1320712389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1320712391}
+  - 114: {fileID: 1320712390}
+  m_Layer: 0
+  m_Name: InputHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1320712390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320712389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dece381532802249901f43bd7df3c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 1306634128}
+--- !u!4 &1320712391
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320712389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.99016, y: 11.9526825, z: 2.95189571}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
 --- !u!1001 &1373067443
 Prefab:
   m_ObjectHideFlags: 0
@@ -2545,7 +2673,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2638,6 +2766,26 @@ Prefab:
     - target: {fileID: 11400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: isAvailible
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 694860966}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playRandomDeathUnitAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
@@ -2752,7 +2900,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2850,6 +2998,26 @@ Prefab:
       propertyPath: isAvailible
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 694860966}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playRandomDeathUnitAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
   m_RootGameObject: {fileID: 820961077}
@@ -2925,8 +3093,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460076441}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: 26.9559994, y: 6.23850012, z: -.924989998}
+  m_LocalRotation: {x: -1.67276273e-08, y: .923879564, z: -.382683486, w: -4.03840588e-08}
+  m_LocalPosition: {x: 0, y: 35, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3151,8 +3319,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606561911}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 9, z: 4.5}
-  m_LocalScale: {x: .5, y: 20, z: 10}
+  m_LocalPosition: {x: 0, y: 7, z: 4.5}
+  m_LocalScale: {x: .5, y: 15, z: 10}
   m_Children: []
   m_Father: {fileID: 228861685}
   m_RootOrder: 4
@@ -3192,7 +3360,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3285,6 +3453,26 @@ Prefab:
     - target: {fileID: 19500000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
       propertyPath: m_ObstacleAvoidanceType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 694860966}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playRandomDeathUnitAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
+      propertyPath: eventToFire.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4f484dcc77a6bf4481ffaefdc481029, type: 2}
@@ -3541,6 +3729,18 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 1848435810}
         m_MethodName: disableNavMesh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 694860966}
+        m_MethodName: playRandomDeathUnitAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
