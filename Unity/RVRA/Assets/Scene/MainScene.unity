@@ -655,18 +655,6 @@ MonoBehaviour:
   scoreGoalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1864034937}
-        m_MethodName: increaseScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
       - m_Target: {fileID: 227717144}
         m_MethodName: fireNewRoundEvent
         m_Mode: 1
@@ -1984,7 +1972,7 @@ GameObject:
   - 23: {fileID: 780830018}
   - 114: {fileID: 780830017}
   - 114: {fileID: 780830021}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Racket1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1999,7 +1987,7 @@ Transform:
   m_GameObject: {fileID: 780830015}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
   m_LocalPosition: {x: 0, y: 2, z: -4.5}
-  m_LocalScale: {x: .5, y: 5, z: 2}
+  m_LocalScale: {x: .5, y: 6, z: 2}
   m_Children: []
   m_Father: {fileID: 228861685}
   m_RootOrder: 5
@@ -2082,7 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcdce8ffed7dc44fb34fa6fca0d98d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oscAddress: /tracker/green/pos_xy
+  _oscAddress: /tracker/blue/pos_xy
   _transform: {fileID: 780830016}
 --- !u!1 &820961077
 GameObject:
@@ -2565,8 +2553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ball: {fileID: 1306634127}
-  _origin: {x: 0, y: 4, z: 0}
-  speed: 20
+  _origin: {x: 0, y: 3, z: 0}
+  speed: 10
 --- !u!23 &1306634129
 Renderer:
   m_ObjectHideFlags: 0
@@ -2575,7 +2563,7 @@ Renderer:
   m_GameObject: {fileID: 1306634127}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
@@ -2628,7 +2616,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
@@ -2718,7 +2706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1320712390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,7 +3325,7 @@ GameObject:
   - 23: {fileID: 1606561913}
   - 114: {fileID: 1606561912}
   - 114: {fileID: 1606561917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Racket2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,7 +3373,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1950b4c26411998438c795221e193ea8, type: 2}
+  - {fileID: 2100000, guid: 601501084747f204c96a9ad30f917514, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3420,7 +3408,7 @@ Transform:
   m_GameObject: {fileID: 1606561911}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
   m_LocalPosition: {x: 0, y: 2, z: 4.5}
-  m_LocalScale: {x: .5, y: 5, z: 2}
+  m_LocalScale: {x: .5, y: 6, z: 2}
   m_Children: []
   m_Father: {fileID: 228861685}
   m_RootOrder: 4
@@ -3435,7 +3423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcdce8ffed7dc44fb34fa6fca0d98d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oscAddress: /tracker/blue/pos_xy
+  _oscAddress: /tracker/green/pos_xy
   _transform: {fileID: 1606561916}
 --- !u!1 &1655157156
 GameObject:

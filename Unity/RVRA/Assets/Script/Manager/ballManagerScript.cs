@@ -48,11 +48,11 @@ public class ballManagerScript : MonoBehaviour {
     {
         Vector3 currentForces = this._ball.rigidbody.velocity;
         int x = sideInverseValue;
-        float y = -0.33f;
+        /*float y = -0.33f;
         if (currentForces.y == 0)
-            y = 1;
+            y = 1;*/
         int z = currentForces.z >= 0 ? 1 : -1;
-        this._ball.rigidbody.velocity = new Vector3(x , y, z).normalized * speed;
+        this._ball.rigidbody.velocity = new Vector3(x , 0, z).normalized * speed;
     }
 
     public void InverseYForces(int sideInverseValue)
@@ -66,12 +66,13 @@ public class ballManagerScript : MonoBehaviour {
 
     public void InverseZForces(int sideInverseValue)
     {
+        //Debug.Log("Collision");
         Vector3 currentForces = this._ball.rigidbody.velocity;
         int x = currentForces.x >= 0 ? 1 : -1;
-        float y = -0.33f;
+        /*float y = -0.33f;
         if (currentForces.y == 0)
-            y = 1;
+            y = 1;*/
         int z = sideInverseValue;
-        this._ball.rigidbody.velocity = new Vector3(x, y, z).normalized * speed;
+        this._ball.rigidbody.velocity = new Vector3(x, 0, z).normalized * speed;
     }
 }

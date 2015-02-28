@@ -37,7 +37,7 @@ public class OscMessageHandlerScript : MonoBehaviour
 		}*/
 	}
 	
-	void Start()
+	void Awake()
 	{
 		_mainHandler = this;
 
