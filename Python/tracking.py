@@ -441,13 +441,14 @@ def runtracking():
                         step=0
 		if not pausecam :
                         rgb_image = cv.QueryFrame(capture)
-		#after blob center detection we need to launch pose estimation
-		if ((blobcentergreen != None) and (blobcenteryellow != None) and (blobcenterblue != None) and (blobcenterred != None)):
-			liblo.send(target, "/tracker/green/pos_xy", blobcentergreen[0], blobcentergreen[1])
-			liblo.send(target, "/tracker/yellow/pos_xy", blobcenteryellow[0], blobcenteryellow[1])
-			liblo.send(target, "/tracker/blue/pos_xy", blobcenterblue[0], blobcenterblue[1])
-			liblo.send(target, "/tracker/red/pos_xy", blobcenterred[0], blobcenterred[1])
-		else :
-			print "Tracking failed" 	
+
+		if blobcentergreen != None:
+			liblo.send(target, "/tracker/green/pos_xy", float(blobcentergreen[0])/size_image[0], float(blobcentergreen[1])/size_image[1])
+		if blobcenteryellow != None:
+			liblo.send(target, "/tracker/yellow/pos_xy", float(blobcenteryellow[0])/size_image[0], float(blobcenteryellow[1])/size_image[1])
+		if blobcenterblue != None:
+			liblo.send(target, "/tracker/blue/pos_xy", float(blobcenterblue[0])/size_image[0], float(blobcenterblue[1])/size_image[1])
+		if blobcenterred != None:
+			liblo.send(target, "/tracker/red/pos_xy", float(blobcenterred[0])/size_image[0], float(blobcenterred[1])/size_image[1])
 			
 runtracking()
