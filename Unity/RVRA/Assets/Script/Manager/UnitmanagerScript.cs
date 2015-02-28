@@ -63,6 +63,7 @@ public class UnitmanagerScript : MonoBehaviour {
             selectedUnit.changeUnitPosition(point1.transform.position);
             selectedUnit.setTarget(point2);
             selectedUnit.isAvailible = false;
+            selectedUnit.NavMesh.ResetPath();
             selectedUnit.NavMesh.path = pathToPointTwo;
             StartCoroutine(cooldownRest(selectedUnit));
         }
@@ -71,6 +72,7 @@ public class UnitmanagerScript : MonoBehaviour {
             selectedUnit.changeUnitPosition(point2.transform.position);
             selectedUnit.setTarget(point1);
             selectedUnit.isAvailible = false;
+            selectedUnit.NavMesh.ResetPath();
             selectedUnit.NavMesh.path = pathToPointOne;
             StartCoroutine(cooldownRest(selectedUnit));
         }
