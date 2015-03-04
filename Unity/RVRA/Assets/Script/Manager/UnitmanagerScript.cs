@@ -117,7 +117,7 @@ public class UnitmanagerScript : MonoBehaviour {
 
     private void resetOneUnit(UnitClass unit)
     {
-        Debug.Log("AutoReset");
+        //Debug.Log("AutoReset");
         if(!unit.isAvailible)
         {
             unit.changeUnitPosition(unit.Spawn.transform.position);

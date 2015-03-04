@@ -28,7 +28,7 @@ public class ballManagerScript : MonoBehaviour {
     private IEnumerator wait(int seconde)
     {
         yield return new WaitForSeconds(seconde);
-        this._ball.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+        this._ball.rigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
         AddRandomForce();
         
     }

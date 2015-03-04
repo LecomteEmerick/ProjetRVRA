@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class EventManager : MonoBehaviour {
@@ -63,6 +64,7 @@ public class EventManager : MonoBehaviour {
         //Debug.Log("End Game");
         if (endGameEvent != null)
             endGameEvent.Invoke();
+        StartCoroutine(restartGameAfterSecond(5));
     }
 
     public void fireStartGameEvent()
@@ -84,5 +86,11 @@ public class EventManager : MonoBehaviour {
         //Debug.Log("Score increase");
         if (increasePointEvent != null)
             increasePointEvent.Invoke();
+    }
+
+    private IEnumerator restartGameAfterSecond(int seconde)
+    {
+        yield return new WaitForSeconds(seconde);
+        fireStartGameEvent();
     }
 }
